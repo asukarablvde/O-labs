@@ -12,4 +12,4 @@ function sumDoWhile(...args) {
     return result;
 }
 
-console.log(sumDoWhile(1, 2, 3)); // 6
+console.log(sumDoWhile(1, 2, 3)); 
