@@ -8,5 +8,5 @@ function sumFor(...args) {
     return result;
 }
 
-console.log(sumFor(1, 2, 3)); // 6
-console.log(sumFor());       // 0
+console.log(sumFor(1, 2, 3));
+console.log(sumFor());       
