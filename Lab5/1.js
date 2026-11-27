@@ -1,13 +1,12 @@
 function seq(...funcs) {
-    return function (fn) {
+    return function(fn) {
         if (typeof fn === "number") {
             return funcs.reduceRight((value, f) => f(value), fn);
         }
 
-        return seq(fn, ...funcs);
+        return seq(...funcs, fn);
     };
 }
-
 console.log(
     seq(x => x + 7)
     (x => x * 2)(5)
